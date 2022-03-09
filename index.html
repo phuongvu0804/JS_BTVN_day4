@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <!-- B1: Tính tiền lương -->
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-header">
+            Tính tiền lương
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="daySalary">Lương 1 ngày: </label>
+              <input type="text" class="form-control" value="100000" readonly id="daySalary">
+            </div>
+            <div class="form-group">
+              <label for="workingDay">Số ngày làm</label>
+              <input type="text" class="form-control" name="" id="workingDay">
+            </div>
+          </div>
+          <button id="salaryCalculateBtn" class="btn btn-info">Tính</button>
+          <div class="salary-footer card-footer text-muted">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- B2: Tính gía trị TB -->
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card mt-5">
+          <div class="card-header">
+            Tính giá trị trung bình
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <h5>Xin mời nhập vào 5 số thực</h5>
+              <label class='mt-4' for="realNumber1">Số thực thứ 1:</label>
+              <input type="text" class="form-control" id="realNumber1">
+              <label class='mt-4' for="realNumber2">Số thực thứ 2:</label>
+              <input type="text" class="form-control" id="realNumber2">
+              <label class='mt-4' for="realNumber3">Số thực thứ 3:</label>
+              <input type="text" class="form-control" id="realNumber3">
+              <label class='mt-4' for="realNumber4">Số thực thứ 4:</label>
+              <input type="text" class="form-control" id="realNumber4">
+              <label class='mt-4' for="realNumber5">Số thực thứ 5:</label>
+              <input type="text" class="form-control" id="realNumber5">
+            </div>
+          </div>
+          <button class="average-cal-btn btn btn-info">Tính</button>
+          <div class="average-cal-footer card-footer text-muted">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- B3: Quy đổi tiền -->
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card mt-5">
+          <div class="card-header">
+            Quy đổi tiền
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label class='mt-4' for="usdValue">Giá USD hiện đang là</label>
+              <input type="text" class="form-control" id="usdValue" value="23500" readonly>
+              <label class='mt-4' for="convertedAmount">Số tiền muốn quy đổi:</label>
+              <div class="d-flex" style="align-items: center">
+                <input type="text" class="form-control" id="convertedAmount">
+                <span class="ml-2">USD</span>
+              </div>
+            </div>
+          </div>
+          <button class="convert-cal-btn btn btn-info">Quy đổi</button>
+          <div class="convert-cal-footer card-footer text-muted">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- B4: Tính diện tính, chu vi HCN -->
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card mt-5">
+          <div class="card-header">
+            Tính diện tích, chu vi hình chữ nhật
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label class='mt-4' for="rectangle-length">Chiều dài hình chữ nhật:</label>
+              <div class="d-flex" style="align-items: center">
+                <input type="text" class="form-control" id="rectangle-length">
+                <span class="ml-2">m</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class='mt-4' for="rectangle-width">Chiều rộng chữ nhật:</label>
+              <div class="d-flex" style="align-items: center">
+                <input type="text" class="form-control" id="rectangle-width">
+                <span class="ml-2">m</span>
+              </div>
+            </div>
+            <button class="area-cal-btn btn btn-info mt-4">Tính diện tích</button><br>
+            <button class="perimeter-cal-btn btn btn-info mt-4">Tính chu vi</button>
+          </div>
+          <div class="rectangle-footer card-footer text-muted">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- B5: Tính tổng 2 ký số -->
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card mt-5">
+          <div class="card-header">
+            Tính tổng 2 ký số
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label class='mt-4' for="number-2-digits">Mời nhập vào 1 số có 2 chữ số</label>
+              <input type="text" class="form-control" id="number-2-digits">
+            </div>
+            <button class="digit-cal-btn btn btn-info mt-4">Tính tổng 2 ký số</button>
+          </div>
+          <div class="digit-footer card-footer text-muted">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
